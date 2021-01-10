@@ -59,7 +59,7 @@ tempIrOrasDabar.place( x = tempIrOrasDabarVieta[0] , y = tempIrOrasDabarVieta[1]
 tempIrOrasDabar.configure(font=(tempIrOrasDabarSriftas, tempIrOrasDabarDydis))
 
 #paveikslelis
-img = ImageTk.PhotoImage(Image.open("C:\\Users\\Stoninis\\Desktop\\Oras ir Laikas\\oras clipart\\empty.png"))
+img = ImageTk.PhotoImage(Image.open("oras clipart\\empty.png"))
 panel = Label(image = img, bg = pavBG)
 panel.place( x = pavVieta[0], y = pavVieta[1], anchor = "n")
 
@@ -69,7 +69,7 @@ def tempIrOrasDabarYra():
     tempIrOrasDabar.configure(text = pranesimas)
 
 def ikeltiPNG():
-    img = ImageTk.PhotoImage(Image.open("C:\\Users\\Stoninis\\Desktop\\Oras ir Laikas\\oras clipart\\"+soup.find(class_ = "phrase").get_text()+".png"))
+    img = ImageTk.PhotoImage(Image.open("oras clipart\\"+soup.find(class_ = "phrase").get_text()+".png"))
     panel.configure(image = img)
     panel.image = img
 
